@@ -1,19 +1,62 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="XTools - Your Online Toolbox for file conversion, text processing, image compression and more. It's a free, open-source, and data-secure toolbox." />
-    <meta name="keywords" content="XTools, file conversion, text processing, image compression, online toolbox, free, open-source, data-secure" />
-    <meta name="author" content="XTools Team" />
-    <meta name="theme-color" content="#4f46e5" />
-    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-    <title>XTools</title>
-    <script defer src="https://stat.deepzero.ai/script.js" data-website-id="6a6c1a00-5ff3-4312-a8a8-bcdc8b16b160"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人介绍</title>
+    <!-- 引入 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 设置全局字体为 Inter，并添加一些基础样式 */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* 浅灰色背景 */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 将内容顶部对齐 */
+            min-height: 100vh;
+            padding: 2rem 0; /* 页面顶部和底部留白 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 主内容容器，使用 Tailwind CSS 进行布局和样式设置 -->
+    <div class="container mx-auto p-6 bg-white shadow-xl rounded-xl max-w-4xl w-full flex flex-col items-center">
+        <!-- 页面标题 -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8 text-center leading-tight">
+            你好，我是 [hhlp]
+        </h1>
+
+        <!-- 个人图片 -->
+        <div class="mb-8 w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-full shadow-lg border-4 border-blue-200">
+            <!--
+                请在这里替换为您的公共图片URL。
+                示例: src="https://example.com/your-image.jpg"
+                当前是一个随机图片URL，用于演示外部图片链接有效性。
+            -->
+            <img
+                src="https://picsum.photos/256"
+                alt="您的个人图片"
+                class="w-full h-full object-cover"
+                onerror="this.onerror=null; this.src='https://placehold.co/256x256/fecaca/991b1b?text=图片加载失败'"
+            >
+        </div>
+
+        <!-- 第一段文字：关于我 -->
+        <p class="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
+            欢迎来到我的个人介绍页面！我是一名热爱学习和探索的爱好者，对领域和 [您的兴趣领域2] 充满热情。我相信通过持续的努力和积极的态度，我们可以不断突破自我，创造更多可能性。我喜欢将复杂的问题简化，并享受从挑战中学习成长的过程。
+        </p>
+
+        <!-- 第二段文字：我的经历/技能 -->
+        <p class="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
+            在过去的几年里，我专注于 [您的专业领域或主要工作内容]，积累了 [具体技能1]、[具体技能2] 和 [具体技能3] 等方面的经验。我曾在 [公司/项目名称] 参与了 [具体贡献或项目描述]，这让我对 [相关行业/技术] 有了更深入的理解。我乐于团队协作，也享受独立解决问题的乐趣。
+        </p>
+
+        <!-- 第三段文字：我的未来展望/联系方式 -->
+        <p class="text-lg text-gray-700 leading-relaxed text-justify">
+            我期待在未来能够继续在 [您希望发展的方向] 领域深耕，并与更多志同道合的朋友交流学习。如果您有任何问题或想进行合作，欢迎通过 [您的联系方式，例如：电子邮件地址] 与我取得联系。感谢您的阅读，期待与您相遇！
+        </p>
+    </div>
+</body>
 </html>
+>
